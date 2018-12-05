@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Chatkit from '@pusher/chatkit-client'
-import MessageList from '../../components/MessageList'
+import MessageList from '../../components/MessageList/MessageList'
 import SendMessageForm from '../../components/SendMessageForm'
+import Footer from '../../components/Footer/Footer'
+import SideBar from '../../components/Sidebar/Sidebar'
+import './ChatScreen.css';
 
 class ChatScreen extends Component {
   constructor(props) {
@@ -36,7 +39,7 @@ class ChatScreen extends Component {
       .then(currentUser => {
        this.setState({ currentUser })
         return currentUser.subscribeToRoom({
-          roomId: "19389842",
+          roomId: "19390701",
           messageLimit: 100,
           hooks: {
             onMessage: message => {
@@ -54,46 +57,31 @@ class ChatScreen extends Component {
   }
 
   render() {
-    const styles = {
-        container: {
-                    height: '100vh',
-                    display: 'flex',
-                    flexDirection: 'column',
-                  },
-                  chatContainer: {
-                    display: 'flex',
-                    flex: 1,
-                  },
-                  whosOnlineListContainer: {
-                    width: '300px',
-                    flex: 'none',
-                    padding: 20,
-                    backgroundColor: '#2c303b',
-                    color: 'white',
-                  },
-                  chatListContainer: {
-                    padding: 20,
-                    width: '85%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                  },
-    }
     return (
-      <div style={styles.container}>
-        <div style={styles.chatContainer}>
-          <aside style={styles.whosOnlineListContainer}>
-            <h2>Who's online PLACEHOLDER</h2>
+      <div>
+      <div className="principalContainer">
+          <aside className="firstContainer">
+          <SideBar/>
           </aside>
-          <section style={styles.chatListContainer}>
-            <MessageList
-              messages={this.state.messages}
-              style={styles.chatList}
-            />
-            <SendMessageForm onSubmit={this.sendMessage} />
-
-          </section>
+          <div className="secondContainer">
+            
+          {(this.props.className==='red')? 
+                <div className="historicoMensagem">
+                <MessageList
+                  messages={this.state.messages}
+                />
+               </div>
+          : null}
+        
+           <div className="novaMensagem">
+           <SendMessageForm onSubmit={this.sendMessage} />
+             </div> 
+          </div>
+        
         </div>
+        <Footer></Footer>
       </div>
+
     )
   }
 }

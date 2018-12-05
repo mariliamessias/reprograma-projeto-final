@@ -30,14 +30,13 @@ class Chat extends Component {
       })
       .catch(error => console.error('error', error))
   }
-
+  
   render() {
-    if (this.state.currentScreen === 'WhatIsYourUsernameScreen') {
-      return <UsernameForm onSubmit={this.onUsernameSubmitted} />
-    }
-    if (this.state.currentScreen === 'ChatScreen') {
-      return <ChatScreen currentUsername={this.state.currentUsername} />
-    }
+    //  if (this.state.currentScreen === 'WhatIsYourUsernameScreen') {
+    //    return <UsernameForm onSubmit={this.onUsernameSubmitted} />
+    //  }
+    return <ChatScreen currentUsername={'Samanta'}/>
+  
   }
 }
 

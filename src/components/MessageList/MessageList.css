@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+  
+}
+.messageSend{
+      margin-top: 13px;
+      margin-bottom: 13px;
+      background: #c2c2a3;
+      width: 50%;
+      padding: 20px;
+      border-radius: 15px;
+}
+.senderUsername {
+    font-weight: bold;
+    word-wrap: break-word;
+
+}
+.message 
+{   font-size: 15px; 
+     word-wrap: break-word;
+
+
+}
