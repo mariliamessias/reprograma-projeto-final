@@ -65,14 +65,12 @@ class ChatScreen extends Component {
           </aside>
           <div className="secondContainer">
             
-          {(this.props.className==='red')? 
-                <div className="historicoMensagem">
-                <MessageList
-                  messages={this.state.messages}
-                />
-               </div>
-          : null}
-        
+            <div className="historicoMensagem">
+              <MessageList
+                messages={this.state.messages}
+                className={this.props.currentUsername}
+              />
+             </div>
            <div className="novaMensagem">
            <SendMessageForm onSubmit={this.sendMessage} />
              </div> 
