@@ -40,18 +40,7 @@ class Inicio extends Component {
             <Box className = "box6"></Box>
           </section>
           <Footer></Footer>
-        </div>
-
-          <div className="video-fundo">
-            <div className="video-foreground">
-              <YouTube
-                videoId="efvCgbIeMB0"
-                opts={videoOptions}
-                className="video-iframe"
-                onReady={this._onReady}
-                onEnd={this._onEnd}
-              />
-            </div>
+        
         </div>
 
         </div>

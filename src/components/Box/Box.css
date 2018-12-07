@@ -1,7 +1,10 @@
 .box1, .box5{
     width: 100%;
     height: 100vh;
+    background: #000;
+    opacity: 0.7;
 }
+
 
 .box2{
     height: 100vh;
@@ -27,6 +30,10 @@
     background: #F07241;
 }
 
+h1, h2{
+    font-size: 30px;
+}
+
 .conteudo {
     display: flex;
     flex-direction: row;
@@ -46,10 +53,12 @@
 }
 
 .secao__1, .secao1_5{
-    width: 70%;
+    width: 40%;
     text-align:left;
     color: #fff; 
-    padding-right: 50px;  
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px
 }
 
 .secao1_2{
@@ -78,7 +87,10 @@
     width: 70%;
     text-align:left;
     color: #fff; 
-    padding-right: 50px;  
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-right: 50px;
 }
 
 .secao2_4{
@@ -292,12 +304,14 @@ p{
     }
     .secao__1, .secao2_2, .secao2_2, .secao1_4, .secao1_5 p{
         text-align: center;
+        padding: 30px;
     }
 
     .secao1_4 {
         width: 100%;
         color: #fff;
-        padding: 0px;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
     .secao2_4 {
