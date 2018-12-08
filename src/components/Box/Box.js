@@ -1,37 +1,44 @@
 import React, { Component } from 'react';
 import Hug from '../Box/hug.gif'
-import Blocos from '../Box/blocos.png'
 import YouTube from 'react-youtube';
+import Chat from '../Box/chat.png';
+import Book from '../Box/book.png';
+import Lupa from '../Box/lupa.png';
 import ReactPlayer from 'react-player';
 import Ansiedade from '../Box/ansiedade1.jpg';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import './Box.css';
+import './Box.scss';
 class Box extends Component{
   constructor(props) {
     super(props)
   }
 
   render(){
-
     return (
+
     <div className={this.props.className}>
+
+      <video playsinlin autoPlay muted loop> >
+        <source src="https://staging.coverr.co/s3/mp4/Lonely-Chair.mp4" type="video/mp4" />
+        teste
+        </video>
       {(this.props.className==='box1')? 
-        <div className="conteudo">
+        <div className="conteudo__">
 
          <section className="secao__1">
            <h1>Está cansado(a) de conversar com as "paredes"?</h1>
            <p></p>
            <p>Sabe quando você não está legal, mas prefere não falar nada para ninguém, ou fala mas a resposta não é efetiva e você continua se sentindo mal?</p>
            <p>As vezes só precisamos desabafar, conversar com alguém sobre algo que aconteceu no nosso dia, um pensamento que te perturba ha tempos, mas você acha que é normal ou que ninguém entenderia. </p>
-           
-           </section>                    
+          </section>                    
 
        </div>
 
        : null
       }
       {(this.props.className==='box2')? 
-        <div className="conteudo">
+        <div className="conteudo__">
          <section className="secao1_2">
          <Flippy
                
@@ -70,7 +77,7 @@ class Box extends Component{
        : null
       }
       {(this.props.className==='box3')? 
-        <div className="conteudo">
+        <div className="conteudo__">
          <section className="secao1_3">
           <h2>Para qualquer caso de doença diagnosticada ou não, antes de qualquer coisa, o ideal é se informar.</h2>
           <p></p>
@@ -88,7 +95,7 @@ class Box extends Component{
       }
 
       {(this.props.className==='box4')? 
-        <div className="conteudo">
+        <div className="conteudo__">
 
          <section className="secao1_4">
            <h1>Parou para pensar que: <i>talvez você não estivesse aqui se algum veículo de mídia não tivesse te mostrado algum dado alarmante?</i></h1>
@@ -108,12 +115,16 @@ class Box extends Component{
       }
 
        {(this.props.className==='box5')? 
-        <div className="conteudo">
+        <div className="conteudo__">
 
         <section className="secao1_5">
-           <h1>Se você está aqui é porque conhece alguém que solta frases aleatórias como se obtivesse todo o conhecimento do mundo, "querendo ajudar":</h1>
+                    
+           <h1>A <b>"QUER UM CONSELHO?"</b> acredita que a colaboração pode salvar vidas.</h1>
            <p></p>
-           <p>Nós acreditamos no conceito de colaboração e por isso, a nossa plataforma funcionará com base em pessoas tecnicamente habilitadas disponíveis para fornecer um primeiro contato e auxílio de forma gratuita a quem precisar, no passo de um click.</p>
+           <p>Nossa plataforma baseia-se no conceito de aconselhamentos gratuitos, e tem a finalidade de permitir que as pessoas conversem sobre o que sentem com um especialista, para desmificar alguns conceitos sobre consultas psicológicas/psiquiátricas, ou seja, de maneira informal e descontraída, tal como os aplicativos de mensagem que possuem instalados em seus celulares. </p>
+           <p>A partir do momento que existe um conselheiro e um aconselhado, existe uma pré-consulta, isso significa que a plataforma nunca irá substituir uma consulta real e presencial.</p>
+           <p>Possuímos normas rígidas e bem definidas que irão garantir segurança e integridade da conversa entre ambas as partes, respeitando-se as leis e o que o Conselho determina aos profissionais na área.</p>
+           <p>Recomendamos que após finalizar seu cadastro, leia com calma as normas e termos da nossa plataforma.</p>
           </section>                      
     
        </div>
@@ -121,8 +132,8 @@ class Box extends Component{
        : null
       }
       {(this.props.className==='box6')?
-      <div className="conteudo1"> 
-        <div className="conteudo_">
+      <div className="conteudo__box6"> 
+        <div className="conteudo__box6-sub">
 
          <section className="secao1_6">
 
@@ -140,9 +151,9 @@ class Box extends Component{
              <h1>É profissional da área da Psicologia ou Psiquatria?</h1>
              </FrontSide>
              <BackSide className="BackSide_3">
-             <p>Você se cadastrará na nossa plataforma, e a partir daí poderá dar conselhos de forma anônima respondendo as mensagens que chegarão em sua caixa de entrada.</p>
-            <p>Pedimos bom senso, e cautela nos aconselhamentos, lembre-se que pode se tratar do primeiro contato das pessoas com um profissional da área. Que não substitui uma consulta psicológica e psiquiátrica.</p>
-            <p>Caso tenha dúvidas de como proceder, recomendamos ler as políticas da nossa plataforma, clicando aqui.</p>
+            
+            <p>Contamos com seu bom-senso e profissionalismo para dar bons conselhos. Para utilizar nossos serviços, será necessário criar uma conta e informar o seu número de registro da profissão.</p>
+            <p>Em seguida você será direcionado a responder um aconselhado.</p>
               </BackSide>
            </Flippy>
 
@@ -164,20 +175,63 @@ class Box extends Component{
              <h1>Chegou até aqui e entende que precisa conversar com alguém?</h1>
              </FrontSide>
              <BackSide className="BackSide_4">
-              <p>Não prometemos resolver seus problemas, mas assim como informamos anteriormente, pretendemos ajudar de maneira mais efetiva.</p>
-              <p>Por isso preparamos para você uma plataforma que te proporcionará ter um diálogo saudável, no caráter de aconselhamentos junto a um especialista. Toda comunicação será feita via chat de mensagens, a forma mais segura e prática para te proporcionar liberdade para falar o que sente.</p>
-               <h5>Lembre-se, essa plataforma não substitui uma consulta presencial a um especialista!</h5>
-               </BackSide>
+              <p>Não prometemos resolver todos os problemas, mas sim ajudar da melhor maneira que pudermos.Sinta-se livre para falar o que sente, pois o especialista com quem irá conversar tem identidade anônima.</p>
+              <h5>Lembre-se, essa plataforma não substitui uma consulta presencial a um especialista!</h5>
+              </BackSide>
            </Flippy>
         
         
         </section>
        </div>
       
-         <button className="bConversar" type="button">Vamos Conversar?</button>
+         <button className="bConversar" type="button">QUER UM CONSELHO?</button>
       </div>
        : null
       }       
+
+     {(this.props.className==='box7')? 
+        <div className="conteudo__box7">
+          <div className="conteudo__box7-sub">
+            <section className="secao1_7">
+              <div className="conteudo__box7-sub-section">
+                <div className="conteudo__box7-sub-section-container1">
+                <img className ="image__box7" src={Chat} />
+                </div>
+                <div className="conteudo__box7-sub-section-container2">
+                    <h3>Chat</h3>
+                    <p>Nossa plataforma proporciona uma experiência bidimensional, entre o aconselhado e o conselheiro, tal como uma conversa em um aplicativo de celular.</p>
+                </div>
+              </div>
+            </section>      
+            <section className="secao2_7">
+              <div className="conteudo__box7-sub-section">
+              <div className="conteudo__box7-sub-section-container1">
+              <img className ="image__box7" src={Lupa} />
+              </div>
+              <div className="conteudo__box7-sub-section-container2">
+                  <h3>Busca por clínicas/consultórios</h3>
+                    <p>Proporcionamos aos usuários a busca por clínicas por região do Brasil, para atendimentos de forma gratuita ou em clínicas pagar/conveniadas.</p>
+              </div>
+              </div>
+            </section>   
+            <section className="secao3_7">
+              <div className="conteudo__box7-sub-section">
+                <div className="conteudo__box7-sub-section-container1">
+                <img className ="image__box7" src={Book} />
+                </div>
+                <div className="conteudo__box7-sub-section-container2">
+                  <h3>Glossário e Banco de Conhecimento</h3>
+                  <p>Disponibilizamos um banco de conhecimento carregado de informações pertinentes a doenças psicológicas, a tratamentos, a dicas e demais assuntos relacionados. </p>
+                </div>
+              </div>
+            </section>   
+
+          </div>                
+         </div>
+
+       : null
+      }
+
       </div>
     )
   }

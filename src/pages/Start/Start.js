@@ -18,25 +18,17 @@ class Inicio extends Component {
   
   render() {
 
-    const videoOptions = {
-      playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0
-      }
-    };
-
     return (
       <div>
       <div className="inicio">
-        
+       
         <section className="secao1">
-            <Box className="box1"></Box>
+            <Box className = "box1"></Box>
             <Box className = "box2"></Box>
             <Box className = "box3"></Box>
             <Box className = "box4"></Box>
             <Box className = "box5"></Box>
+            <Box className = "box7"></Box>
             <Box className = "box6"></Box>
           </section>
           <Footer></Footer>
