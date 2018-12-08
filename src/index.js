@@ -26,15 +26,6 @@ class App extends Component {
         this.setState({sideDrawerOpen: false});
     };
 
-    _onReady(event) {
-        // access to player in all event handlers via event.target
-        // event.target.mute();
-      }
-      
-      _onEnd(event) {
-        event.target.playVideo();
-      }
-
 render(){
     let sideDrawer;
     let backdrop;
@@ -43,17 +34,7 @@ render(){
         backdrop = <BackDrop click={this.backdropClickHandler}/>
     }
 
-    const videoOptions = {
-        playerVars: { // https://developers.google.com/youtube/player_parameters
-          autoplay: 1,
-          controls: 0,
-          rel: 0,
-          showinfo: 0
-        }
-      };
-
     return (
-
           <div className="app" style={{height: '100%'}}>
           <Header drawerClickHandler={this.drawerToogleClickHandler}/>
           <SideDrawer show = {this.state.sideDrawerOpen}/>

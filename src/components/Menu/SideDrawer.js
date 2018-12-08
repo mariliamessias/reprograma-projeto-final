@@ -11,6 +11,9 @@ const sideDrawer = props =>{
             <li><a href="/">Introdução</a></li>
             <li><a href="/">Sobre Nós</a></li>
             <li><a href="/">Contato</a></li>
+            <li><a href="/">Minha Conta</a></li>
+            <li><a href="/">Meus Serviços</a></li>
+            <li><a href="/">Sair</a></li>
         </ul>
     </nav>
   );

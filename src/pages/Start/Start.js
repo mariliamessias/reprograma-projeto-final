@@ -6,22 +6,12 @@ import './Start.css';
 import './Start.scss'
 
 class Inicio extends Component {
-  
-  _onReady(event) {
-    // access to player in all event handlers via event.target
-    // event.target.mute();
-  }
-  
-  _onEnd(event) {
-    event.target.playVideo();
-  }
-  
+    
   render() {
 
     return (
       <div>
       <div className="inicio">
-       
         <section className="secao1">
             <Box className = "box1"></Box>
             <Box className = "box2"></Box>

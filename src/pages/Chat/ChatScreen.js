@@ -59,9 +59,6 @@ class ChatScreen extends Component {
     return (
       <div>
       <div className="principalContainer">
-          <aside className="firstContainer">
-          <SideBar/>
-          </aside>
           <div className="secondContainer">
             
             <div className="historicoMensagem">

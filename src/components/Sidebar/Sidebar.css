@@ -25,8 +25,7 @@
 }
 
 a{
-    text-decoration: none;
-    pointer-events: none; 
+    text-decoration: none; 
     cursor: default;
     color: #fff;
 }

@@ -7,22 +7,126 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.cardHeader{
+.cardHeader-glossario{
+    background-image: url("brain.png");
+    height: 300px;
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+}
+.cardHeader-normas{
     background-image: url("termo.jpg");
-   height: 300px;
-   background-size: cover;
-   text-align: left;
+    height: 300px;
+    background-size: cover;
+    text-align: left;
     color: #fff;
-    padding: 10px;
-
-}
-.botaoAcessar{
     padding: 10px;
 }
 
-h2{
+.cardHeader-clinicas{
+    background-image: url("maps.jpg");
+    height: 300px;
+    background-size: cover;
+    text-align: left;
     color: #fff;
+    padding: 10px;
 }
+
+.cardHeader-chat{
+    background-image: url("talk.jpg");
+    height: 300px;
+    background-size: cover;
+    text-align: left;
+    color: #fff;
+    padding: 10px;
+}
+
+.botaoAcessar-chat, .botaoAcessar-clinicas, .botaoAcessar-normas, .botaoAcessar-glossario {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    font-weight:700;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.botaoAcessar-chat{
+    
+    background:#300030;
+    box-shadow:0 15px 0 #601848;   
+}
+
+.botaoAcessar-glossario{
+    
+    background:#601848;
+    box-shadow:0 15px 0 #C04848;   
+}
+
+.botaoAcessar-glossario:hover{
+    background:#C04848;
+    box-shadow:0 15px 0 #601848;
+}
+
+.botaoAcessar-glossario:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+}
+
+.botaoAcessar-clinicas{
+    
+    background:#C04848;
+    box-shadow:0 15px 0 #F07241;   
+}
+
+.botaoAcessar-normas{
+    
+    background:#F07241;
+    box-shadow:0 15px 0 #300030;   
+}
+
+.botaoAcessar-normas:hover{
+    background:#300030;
+    box-shadow:0 15px 0 #F07241;
+}
+
+.botaoAcessar-normas:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+}
+
+
+.botaoAcessar-chat:hover{
+    background:#601848;
+    box-shadow:0 15px 0 #300030;
+}
+
+.botaoAcessar-chat:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+}
+
+.botaoAcessar-clinicas:hover{
+    background:#F07241;
+    box-shadow:0 15px 0 #C04848;
+}
+
+.botaoAcessar-clinicas:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+}
+
+
+.cardContainer h3, .cardContainer p{
+    color: #000;
+}
+
 .cardFooter{
     width: 100%;
     height: 250px;

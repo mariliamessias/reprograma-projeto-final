@@ -4,6 +4,7 @@ import YouTube from 'react-youtube';
 import Chat from '../Box/chat.png';
 import Book from '../Box/book.png';
 import Lupa from '../Box/lupa.png';
+import { Link, withRouter } from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import Ansiedade from '../Box/ansiedade1.jpg';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
@@ -19,7 +20,7 @@ class Box extends Component{
 
     <div className={this.props.className}>
 
-      <video playsinlin autoPlay muted loop> >
+      <video playsInline autoPlay muted loop> >
         <source src="https://staging.coverr.co/s3/mp4/Lonely-Chair.mp4" type="video/mp4" />
         teste
         </video>
@@ -32,7 +33,8 @@ class Box extends Component{
            <p>Sabe quando você não está legal, mas prefere não falar nada para ninguém, ou fala mas a resposta não é efetiva e você continua se sentindo mal?</p>
            <p>As vezes só precisamos desabafar, conversar com alguém sobre algo que aconteceu no nosso dia, um pensamento que te perturba ha tempos, mas você acha que é normal ou que ninguém entenderia. </p>
           </section>                    
-
+          
+          <button type="button" className="buttonFixo">Next</button>
        </div>
 
        : null
@@ -183,8 +185,11 @@ class Box extends Component{
         
         </section>
        </div>
-      
-         <button className="bConversar" type="button">QUER UM CONSELHO?</button>
+        
+         <Link to="/home" className="buttonConselho">
+            QUER UM CONSELHO?
+         </Link>
+        
       </div>
        : null
       }       
