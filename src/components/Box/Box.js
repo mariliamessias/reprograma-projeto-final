@@ -9,7 +9,7 @@ import ReactPlayer from 'react-player';
 import Ansiedade from '../Box/ansiedade1.jpg';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import './Box.css';
-import './Box.scss';
+//import './Box.scss';
 class Box extends Component{
   constructor(props) {
     super(props)

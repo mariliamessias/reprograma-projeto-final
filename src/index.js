@@ -6,8 +6,8 @@ import Inicio from './pages/Start/Start';
 import Home from './pages/Home/Home';
 import SideDrawer from '../src/components/Menu/SideDrawer.js'
 import Chat from './pages/Chat/Chat'
+import Login from './pages/Login/Login'
 import BackDrop from '../src/components/Backdrop/Backdrop'
-import {Provider} from 'react-redux'
 import YouTube from 'react-youtube';
 import {createStore, applyMiddleware } from 'redux'
 import './index.css';
@@ -43,6 +43,7 @@ render(){
                   <Route path="/" exact component={Inicio} />
                   <Route path="/home" component={Home} />
                   <Route path="/chat" component={Chat} />
+                  <Route path="/login" component={Login} />
               </Switch>
        
             </div>

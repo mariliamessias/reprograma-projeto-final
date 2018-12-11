@@ -1,11 +1,9 @@
-
 .box1, .box5{
     width: 100%;
     height: 115.5vh;;
     background: #000;
     opacity: 0.95;
 }
-
 .box7{
     height: 100vh;
     width: 100%;
@@ -195,7 +193,6 @@ h1, h2{
 
 .secao1_3 p{
     word-wrap:  break-word;
-    font-size: 20px;
     text-align: left;
 }
 
@@ -226,8 +223,8 @@ h6{
     font-size: 30px;
     box-shadow: none;
     height: 400px;
-
   }
+
   .FrontSide_3 h1{
     text-align: center;
     position: absolute;
@@ -375,11 +372,982 @@ video {
     transition: 1s opacity  !important;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
+@media (min-width: 1281px) and (max-width: 1400px) { 
+    
+    video {
+        position: absolute;
+        /* top: 50% !important; */
+        /* left: 50% !important; */
+        z-index: -999;
+        min-width: 100% !important;
+        min-height: 100% !important;
+        width: 100px !important;
+        height: auto !important;
+        background: #ccc;
+        transition: 1s opacity  !important;
+    }
+    .box1, .box5{
+        width: 100%;
+        height: 115vh;
+        background: #000;
+        opacity: 0.95;
+    }
+    
+    .box7{
+        height: 100vh;
+        width: 100%;
+        background: #480048;
+    }
+    
+    .box2{
+        height: 100vh;
+        width: 100%;
+        background: #480048;
+    }
+    
+    .box4{
+        background: #601848;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .buttonFixo{
+        position: fixed;
+        right: 25px;
+        bottom : 25px;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        background: #C04848;
+        cursor: pointer;
+    }
+    .box6{
+        background: #C04848;
+        height: 110vh;
+        width: 100%;
+    }
+    
+    .box3{
+        height: 700px;
+        width: 100%;
+        background: #F07241;
+    }
+    
+    h1, h2{
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .box1 .conteudo__{
+        padding: 100px;
+    }
+    
     .conteudo__{
+        display: flex;
+        flex-direction: row;
+        padding:50px;
+    }
+    
+    .conteudo__box7{
+        padding:0px;
+    }
+    
+    .conteudo__box7-sub{
+        display: flex;
+        height: 100vh;
+    }
+    
+    .conteudo__box6{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo__box6-sub {
+        display: flex;
+        flex-direction: row;
+        padding:100px;
+    
+    }
+    
+    .secao__1 {
+        width: 45%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 20px;
+        margin-top: 200px;
+    }
+    
+    .secao1_7, .secao2_7, .secao3_7 {
+        width: 100%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;    
+    }
+    
+    .secao1_5{
+        width: 48%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;
+        background: #601848;
+        border: 1px solid;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    
+    .secao1_2{
+        width: 50%;
+        color: #000;    
+    }
+    
+    .secao2_2{
+        width: 100%;
+        text-align:right;
+        color: #fff; 
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .secao1_3{
+        width: 60%;
+        color: #000;    
+        margin-top: 30px;
+    }
+    .secao2_3{
+        width: 100%;
+        text-align:right;
+        color: #fff; 
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    
+    .secao1_4{
+        width: 60%;
+        text-align:left;
+        color: #fff; 
         padding: 30px;
+        border: 1px solid;
+        border-radius: 20px;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    
+    .secao2_4{
+        padding: 20px;
+        width: 40%;
+        color: #000;
+        margin-top: 30px;
+    }
+    
+    .conteudo__box7-sub-section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .conteudo__box7-sub-section-container1{
+        height: 40vh;
+        padding: 20px;
+    }
+    
+    .conteudo__box7-sub-section-container2{
+        height: 40vh;
+        text-align: center;
+        padding: 20px;
+    }
+    .secao1_6{
+        width: 50%;
+        margin-right: 50px;
+            
+    }
+    
+    .secao1_7{
+        background: #F07241;
+    }
+    
+    .secao2_7{
+        background: #300030;
+    }
+    
+    .secao3_7{
+        background: #d147a3;
+    }
+    
+    .secao2_6{
+        width: 50%;
+        margin-left: 50px;
+    }
+    
+    .secao1_3 p{
+        word-wrap:  break-word;
+        text-align: left;
+    }
+    
+    .video{
+        width: 100px;
+        height: 100px;
+    }
+    
+    p{
+        font-size: 18px;
+        text-align: left;
+        color: #fff;
+    }
+    
+    h6{
+        color: #fff;
+    }
+      
+      .FrontSide_2{
+        font-size: 30px;
+        box-shadow: none;
+    
+      }
+    
+      .FrontSide_3{
+        color: white;
+        background: #480048;
+        font-size: 30px;
+        box-shadow: none;
+        height: 400px;
+      }
+    
+      .FrontSide_3 h1{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      .BackSide_3{
+        background: #480048;
+        height: 400px;
+        color: #fff;
+        padding: 50px;
+        width: 100%;
+      }
+    
+      .buttonConselho{
+        text-align: center;
+        font-size: 20px;
+        font-weight:700;
+        text-transform: uppercase;
+        border:none;
+        padding:30px;
+        text-decoration: none;
+        background:#300030;
+        color:#fff;
+        box-shadow:0 15px 0 #601848;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+     
+    .buttonConselho:hover{
+        background:#601848;
+        box-shadow:0 15px 0 #300030;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .buttonConselho:active{
+            position:relative;
+            top:5px;
+            box-shadow:none;
+    }
+      .BackSide_3 p{
+        text-align: justify;
+        padding: 10px;
+      }
+      .FrontSide_4{
+        color: #fff;
+        background: #F07241;
+        font-size: 30px;
+        box-shadow: none;
+        height: 400px;
+    
+      }
+      .FrontSide_4 h1{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      .BackSide_4{
+        background: #F07241;
+        height: 400px;
+        color: #fff;
+        padding: 50px;
+        width: 100%;
+      }
+    .BackSide_4  p ,
+     .BackSide_3  p{
+        text-align: justify;
+        font-size: 20px;
+      }
+    
+       .BackSide_2{
+        background: #fff;
+        height: 90%;
+        width: 80%;
+      }
+    
+      .BackSide_2 h1, .BackSide_2 p{
+        color: #000;
+      }
+    
+      .BackSide p{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    .BackSide_2 h1{
+        text-align: center;
+    }
+    .BackSide_2 p{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    .gif{
+          width: 100%;
+          height: 85%;
+          padding: 10px 0;
+      }
+    
+    .ansiedade{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image__box7{
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+    }
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .box1, .box5{
+        width: 100%;
+        height: 64vh;
+        background: #000;
+        opacity: 0.95;
+    }
+    
+    .box7{
+        height: 100vh;
+        width: 100%;
+        background: #480048;
+    }
+    
+    .box2{
+        height: 100vh;
+        width: 100%;
+        background: #480048;
+    }
+    
+    .box4{
+        background: #601848;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .buttonFixo{
+        position: fixed;
+        right: 25px;
+        bottom : 25px;
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        background: #C04848;
+        cursor: pointer;
+    }
+    .box6{
+        background: #C04848;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .box3{
+        height: 700px;
+        width: 100%;
+        background: #F07241;
+    }
+    
+    h1, h2{
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .box1 .conteudo__{
+        padding: 50px;
+    }
+    
+    .conteudo__{
+        display: flex;
+        flex-direction: row;
+        padding:50px;
+    }
+    
+    .conteudo__box7{
+        padding:0px;
+    }
+    
+    .conteudo__box7-sub{
+        display: flex;
+        height: 100vh;
+    }
+    
+    .conteudo__box6{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo__box6-sub {
+        display: flex;
+        flex-direction: row;
+        padding:100px;
+    }
+    
+    .secao__1 {
+        width: 45%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 20px;
+        margin-top: 0px;
+    }
+    
+    .secao1_7, .secao2_7, .secao3_7 {
+        width: 100%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;    
+    }
+    
+    .secao1_5{
+        width: 100%;
+        text-align:left;
+        color: #fff; 
+        padding: 10px;
+        background: #601848;
+        border: 1px solid;
+        border-radius: 20px;
+
+    }
+    
+    .secao1_2{
+        width: 70%;
+        color: #000;    
+    }
+    
+    .secao2_2{
+        width: 100%;
+        text-align:right;
+        color: #fff; 
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .secao1_3{
+        width: 60%;
+        color: #000;    
+        margin-top: 30px;
+    }
+    .secao2_3{
+        width: 100%;
+        text-align:right;
+        color: #fff; 
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    
+    .secao1_4{
+        width: 60%;
+        text-align:left;
+        color: #fff; 
+        padding: 30px;
+        border: 1px solid;
+        border-radius: 20px;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    
+    .secao2_4{
+        padding: 20px;
+        width: 40%;
+        color: #000;
+        margin-top: 30px;
+    }
+    
+    .conteudo__box7-sub-section{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vh/3;
+        padding: 10px;
+        margin-top: 20vh;
+    }
+    
+    .conteudo__box7-sub-section-container1{
+        height: 20vh;
+        padding: 20px;
+    }
+    
+    .conteudo__box7-sub-section-container2{
+        height: 50vh;
+        text-align: center;
+        padding: 0px;
+    }
+    .secao1_6{
+        width: 50%;
+        margin-right: 50px;
+    }
+    
+    .secao1_7{
+        background: #F07241;
+    }
+    
+    .secao2_7{
+        background: #300030;
+    }
+    
+    .secao3_7{
+        background: #d147a3;
+    }
+    
+    .secao2_6{
+        width: 50%;
+        margin-left: 50px;
+    }
+    
+    .secao1_3 p{
+        word-wrap:  break-word;
+        text-align: left;
+    }
+    
+    .video{
+        width: 100px;
+        height: 100px;
+    }
+    
+    p{
+        font-size: 18px;
+        text-align: left;
+        color: #fff;
+    }
+    
+    h6{
+        color: #fff;
+    }
+      
+      .FrontSide_2{
+        font-size: 30px;
+        box-shadow: none;
+         height: 50vh;
+        width: 100%;
+    
+      }
+
+      .FrontSide_3{
+        color: white;
+        background: #480048;
+        font-size: 30px;
+        box-shadow: none;
+        height: 400px;
+      }
+    
+      .FrontSide_3 h1{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      .BackSide_3{
+        background: #480048;
+        height: auto;
+        color: #fff;
+        padding: 20px;
+        width: 100%;
+      }
+      .buttonConselho{
+        text-align: center;
+        font-size: 20px;
+        font-weight:700;
+        text-transform: uppercase;
+        border:none;
+        padding:30px;
+        text-decoration: none;
+        background:#300030;
+        color:#fff;
+        box-shadow:0 15px 0 #601848;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: -50px;
+        cursor: pointer;
+    }
+     
+    .buttonConselho:hover{
+        background:#601848;
+        box-shadow:0 15px 0 #300030;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+.buttonConselho:active{ 
+        position:relative;
+        top:5px;
+        box-shadow:none;
+    }
+      .BackSide_3 p{
+        text-align: justify;
+        padding: 10px;
+      }
+      .FrontSide_4{
+        color: #fff;
+        background: #F07241;
+        font-size: 30px;
+        box-shadow: none;
+        height: 400px;
+        padding: 0px
+      }
+      .FrontSide_4 h1{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+      .BackSide_4{
+        background: #F07241;
+        height: auto;
+        color: #fff;
+        padding: 20px;
+        width: 100%;
+        box-shadow: none;
+      }
+    .BackSide_4  p ,
+     .BackSide_3  p{
+        text-align: justify;
+        font-size: 20px;
+      }
+    
+       .BackSide_2{
+        background: #fff;
+        height: 50vh;
+        width: 100%;
+      }
+    
+      .BackSide_2 h1, .BackSide_2 p{
+        color: #000;
+      }
+    
+      .BackSide p{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    .BackSide_2 h1{
+        text-align: center;
+    }
+    .BackSide_2 p{
+        text-align: center;
+        position: absolute;
+        font-size: 30px;
+        padding: 30px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+      }
+    .gif{
+          width: 100%;
+          height: 85%;
+          padding: 10px 0;
+      }
+    
+    .ansiedade{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image__box7{
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+    }
+    
+    video {
+        
+        position: absolute;
+        /* top: 50% !important; */
+        /* left: 50% !important; */
+        z-index: -999;
+        min-width: 100% !important;
+        /* min-height: 100% !important; */
+        width: 100% !important;
+        background: #ccc;
+        transition: 1s opacity  !important;
+    }
+    
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .conteudo__{
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .FrontSide_4 h1, .FrontSide_3 h1{
+        font-size: 40px;
+    }
+    .BackSide_4 h5{
+        font-size: 30px;
+    }
+    .conteudo__box7-sub{
+      flex-direction: column;
+        height: auto;
+    }
+
+    .image__box7 {
+        padding: 0 100px;
+    }
+    .conteudo__box7-sub-section-container1{
+        padding: 40px;
+    }
+    .conteudo__box7-sub-section{
+        padding: 50px; 
+    }
+    .box1 .conteudo__{
+        padding: 40px;
+        flex-direction: column;
+    }
+    .conteudo {
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        opacity:1 !important;
+    }
+
+    h1, h2, h3{
+        font-size: 38px;
+        text-align: center;
+    }
+    .box1, .box2, .box3, .box4, .box6, .box5, .box7{
+        width: 100%;
+        height: auto;
+    }
+   
+    .secao1_6, .secao2_6 {
+        width: 100%;
+        padding:  20px 0;
+        margin:0px;
+    }
+
+     .secao__1{
+        width: 100%;
+        color: #fff;  
+        margin:0px;
+    }
+
+    .secao1_5{
+        width: 100%;
+        color: #fff;  
+    }
+
+    .box1{
+        background: #601848;
+        opacity: 1;
+    
+    }
+
+    .box5{
+        background: #C04848;
+        opacity: 1;
+    }
+      .conteudo__box6-sub {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        opacity: 1 !important;
+        padding: 30px;
+    }
+
+    .secao1_5 h2{
+        font-size: 25px;
+        
+    }
+    .secao__1 p , .secao2_2 p , .secao1_5 p, .secao1_4 p{
+        text-align: center;
+        padding: 5px;
+    }
+ 
+    .secao1_4 {
+        width: 100%;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .secao1_5{
+        margin:0px;
+    }
+
+    .secao2_4 {
+        width: 100%;
+        height: 50vh;
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    p{
+        font-size: 28px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .secao1_3 p {
+        text-align: center;
+    }
+    h6{
+        text-align: left;
+        color: #fff;
+        font-size: 20px;
+    }
+   
+    .buttonConselho{
+        padding: 20px;
+        margin: 0px;
+        font-size: 30px;
+      }
+
+   .BackSide_4{
+        padding: 15px;
+        margin:0px;
+        height: auto;   
+    }
+
+    .BackSide_3 {
+        padding: 0px;
+        margin:0px;
+        height: auto;   
+    }
+
+    .BackSide_4  p ,
+ .BackSide_3  p{
+
+    font-size: 28px;
+  }
+
+    .secao1_2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .secao2_2 {
+        padding-top: 20px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .secao2_3 {
+        text-align: right;
+        height: 50vh;
+        margin: 0px;
+        padding-top:20px; 
+    }
+
+    .BackSide_2{
+        height: 50vh;
+        width: 100%;
+      }
+
+      .BackSide_2 h1, .BackSide_2 p{
+       font-size: 40px;
+      }
+      
+    .conteudo__box6, .conteudo_{
+        padding: 30px 10px;
+        height: auto;
+    }
+    .secao1_3 {
+        width: 100%;
+        color: #000;
+    }
+
+    .secao1_3 h2{
+        word-wrap: break-word;
+
+    }
+
+    .buttonFixo{
+        display: none;
+    }
+
+    video{
+        position: absolute;
+        /* top: 50% !important; */
+        /* left: 50% !important; */
+        z-index: -999;
+        min-width: 100% !important;
+        /* min-height: 100% !important; */
+        width: 100% !important;
+        background: #ccc;
+        transition: 1s opacity  !important;
+    }
+}  
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    video{
+        position: absolute;
+        /* top: 50% !important; */
+        /* left: 50% !important; */
+        z-index: -999;
+        min-width: 100% !important;
+        /* min-height: 100% !important; */
+        width: 100% !important;
+        background: #ccc;
+        transition: 1s opacity  !important;
+    }
+    .conteudo__{
+        padding: 20px;
         flex-direction: column;
     }
 
@@ -392,7 +1360,7 @@ video {
         padding: 0px; 
     }
     .box1 .conteudo__{
-        padding: 30px;
+        padding: 20px;
         flex-direction: column;
     }
     .conteudo {
@@ -403,7 +1371,7 @@ video {
     }
 
     h1, h2{
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
     }
     .box1, .box2, .box3, .box4, .box6, .box5, .box7{
@@ -451,7 +1419,7 @@ video {
     }
     .secao__1 p , .secao2_2 p , .secao1_5 p, .secao1_4 p{
         text-align: center;
-        padding: 10px;
+        padding: 5px;
     }
  
     .secao1_4 {
@@ -472,12 +1440,19 @@ video {
         margin: 0px;
     }
 
+    p{
+        font-size: 20px;
+        text-align: left;
+        color: #fff;
+    }
+
     .secao1_3 p {
         text-align: center;
     }
     h6{
         text-align: left;
         color: #fff;
+        font-size: 15px;
     }
    
     .buttonConselho{
@@ -493,11 +1468,18 @@ video {
     }
 
     .BackSide_3 {
+    
         padding: 0px;
         margin:0px;
         height: auto;   
 
     }
+
+    .BackSide_4  p ,
+ .BackSide_3  p{
+
+    font-size: 20px;
+  }
 
     .secao1_2 {
         width: 100%;
@@ -523,7 +1505,7 @@ video {
       }
 
       .BackSide_2 h1, .BackSide_2 p{
-       font-size: 27px;
+       font-size: 20px;
       }
       
     .conteudo__box6, .conteudo_{
@@ -538,6 +1520,211 @@ video {
     .secao1_3 h2{
         word-wrap: break-word;
 
+    }
+    h3{
+        font-size: 30px;
+    }
+
+    .buttonFixo{
+        display: none;
+    }
+    
+  }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    
+    .conteudo__{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .conteudo__box7-sub{
+      flex-direction: column;
+        height: auto;
+    }
+
+    .conteudo__box7-sub-section{
+        padding: 0px; 
+    }
+    .box1 .conteudo__{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .conteudo {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        opacity:1 !important;
+    }
+
+    h6{
+        font-size: 13px;
+    }
+
+    h1, h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .box1, .box2, .box3, .box4, .box6, .box5, .box7{
+        width: 100%;
+        height: auto;
+    }
+   
+    .secao1_6, .secao2_6 {
+        width: 100%;
+        padding:  20px 0;
+        margin:0px;
+    }
+
+     .secao__1{
+        width: 100%;
+        color: #fff;  
+        margin:0px;
+    }
+
+    .secao1_5{
+        width: 100%;
+        color: #fff;  
+    }
+
+    .box1, .box5{
+        background: #601848;
+        opacity: 1;
+    }
+
+    .box5{
+        background: #C04848;
+        opacity: 1;
+    }
+      .conteudo__box6-sub {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        opacity: 1 !important;
+        padding: 30px;
+    }
+
+    .secao1_5 h2{
+        font-size: 25px;
+        
+    }
+    .secao__1 p , .secao2_2 p , .secao1_5 p, .secao1_4 p{
+        text-align: center;
+        padding: 5px;
+    }
+ 
+    .secao1_4 {
+        width: 100%;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .secao1_5{
+        margin:0px;
+    }
+
+    .secao2_4 {
+        width: 100%;
+        height: 50vh;
+        padding-top: 0px;
+        margin: 0px;
+    }
+
+    p{
+        font-size: 15px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .secao1_3 p {
+        text-align: center;
+    }
+   
+    .buttonConselho{
+        padding:20px;
+        margin: 0px;
+      }
+
+   .BackSide_4{
+        padding: 15px;
+        margin:0px;
+        height: auto;   
+    }
+
+    .BackSide_3 {
+        padding: 0px;
+        margin:0px;
+        height: auto;   
+    }
+
+    .BackSide_4  p ,
+ .BackSide_3  p{
+
+    font-size: 17px;
+  }
+
+    .secao1_2 {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .secao1_7, .secao2_7, .secao3_7 {
+        width: 100%;
+        text-align:left;
+        color: #fff; 
+        padding: 20px;    
+    }
+
+    .secao2_2 {
+        padding-top: 20px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .secao2_3 {
+        text-align: right;
+        height: 50vh;
+        margin: 0px;
+        padding-top:20px; 
+    }
+
+    .BackSide_2{
+        height: 50vh;
+        width: 100%;
+      }
+
+      .BackSide_2 h1, .BackSide_2 p{
+       font-size: 20px;
+      }
+      
+    .conteudo__box6, .conteudo_{
+        padding: 30px 10px;
+        height: auto;
+    }
+    .secao1_3 {
+        width: 100%;
+        color: #000;
+    }
+
+    .secao1_3 h2{
+        word-wrap: break-word;
+
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    video{
+        position: absolute;
+        /* top: 50% !important; */
+        /* left: 50% !important; */
+        z-index: -999;
+        min-width: 100% !important;
+        /* min-height: 100% !important; */
+        width: 100% !important;
+        background: #ccc;
+        transition: 1s opacity  !important;
     }
 
     .buttonFixo{
