@@ -37,7 +37,7 @@ app.post('/authenticate', (req, res) => {
 })
 
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT
 app.listen(PORT, err => {
   if (err) {
     console.error(err)
