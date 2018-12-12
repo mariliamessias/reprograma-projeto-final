@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer'
 
 import './Login.css';
@@ -17,7 +18,10 @@ class Login extends Component {
                     <input type="text" className="usuario"></input>
                     <p>Senha:</p>
                     <input type="text" className="senha"></input>
-                    <button type="submit" className="buttonLogin">Entrar</button>
+                    <Link to="/home" className="buttonLogin">
+                    Entrar
+                    </Link>
+                   
                 </form>
         </div>
         <div className="conteudoCriarConta">

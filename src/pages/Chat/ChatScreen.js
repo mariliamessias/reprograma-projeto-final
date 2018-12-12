@@ -59,8 +59,10 @@ class ChatScreen extends Component {
     return (
       <div>
       <div className="principalContainer">
+         <div className="firstContainer">
+          <SideBar/>
+          </div>
           <div className="secondContainer">
-            
             <div className="historicoMensagem">
               <MessageList
                 messages={this.state.messages}

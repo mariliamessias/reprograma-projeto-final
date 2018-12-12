@@ -19,7 +19,6 @@ class Box extends Component{
     return (
 
     <div className={this.props.className}>
-
       <video playsInline autoPlay muted loop> >
         <source src="https://staging.coverr.co/s3/mp4/Lonely-Chair.mp4" type="video/mp4" />
         teste
@@ -33,7 +32,6 @@ class Box extends Component{
            <p>Sabe quando você não está legal, mas prefere não falar nada para ninguém, ou fala mas a resposta não é efetiva e você continua se sentindo mal?</p>
            <p>As vezes só precisamos desabafar, conversar com alguém sobre algo que aconteceu no nosso dia, um pensamento que te perturba ha tempos, mas você acha que é normal ou que ninguém entenderia. </p>
           </section>                    
-          
           <button type="button" className="buttonFixo">Next</button>
        </div>
 
@@ -186,7 +184,7 @@ class Box extends Component{
         </section>
        </div>
         
-         <Link to="/home" className="buttonConselho">
+         <Link to="/login" className="buttonConselho">
             QUER UM CONSELHO?
          </Link>
         

@@ -8,18 +8,19 @@
 .firstContainer{
     height: 100%;
     width: 20%;
-    background-color: #2c303b;
+    background-color: #fff;
+    border: solid 1px #000;
 }
 
 .secondContainer{
     height: 100%;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column; 
 }
 
 .historicoMensagem{
-    padding: 20px;
+    padding: 10px;
     height: 70%;
     width: 100%;
     overflow-y: scroll;

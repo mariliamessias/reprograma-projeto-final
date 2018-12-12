@@ -8,9 +8,7 @@ import './MessageList.css';
    render() {
      
      return (
-       <div className="__container">
-       
-             
+       <div className="__container">             
               {this.props.messages.map((message, index) => (
                 <ul className="centralContainer">
                   {(message.senderId ==="Samanta")?
@@ -29,7 +27,6 @@ import './MessageList.css';
                 }
                 </ul>
               ))}
-                     
        </div>
      )
    }

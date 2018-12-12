@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Termos from './termo.jpg';
-
+import { Link, withRouter } from 'react-router-dom';
 import './Card.css'
 
 class Card extends React.Component {
@@ -21,7 +21,10 @@ class Card extends React.Component {
               <footer className="cardFooter">
                 <h3>Chat com conselheiro</h3>
                 <p>Nesta rotina você conseguirá conversar com um conselheiro anônimo.</p>
-                <button type="submit" className="botaoAcessar-chat">Acessar Chat</button>
+                <Link to="/chat" className="botaoAcessar-chat">
+                  Acessar Chat
+                </Link>
+               
               </footer>
             </div>
           : null

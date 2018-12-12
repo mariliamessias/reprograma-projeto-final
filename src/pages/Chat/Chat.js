@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ChatScreen from './ChatScreen'
+import SideBar from '../../components/Sidebar/Sidebar'
 
 class Chat extends Component {
   constructor() {
