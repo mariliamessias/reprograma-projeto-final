@@ -48,7 +48,7 @@ import React, { Component } from 'react'
            <form onSubmit={this.onSubmit} style={styles.form}>
              <input
                type="text"
-               placeholder="Digite sua mensagem e depois pressione enter para enviar."
+               placeholder="Pressione Enter para enviar!"
                onChange={this.onChange}
                value={this.state.text}
                style={styles.input}

@@ -18,10 +18,9 @@ class Login extends Component {
                     <input type="text" className="usuario"></input>
                     <p>Senha:</p>
                     <input type="text" className="senha"></input>
-                    <Link to="/home" className="buttonLogin">
-                    Entrar
-                    </Link>
-                   
+                        <Link to="/home" className="buttonLogin">
+                        Entrar
+                        </Link>
                 </form>
         </div>
         <div className="conteudoCriarConta">

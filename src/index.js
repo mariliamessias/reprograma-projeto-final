@@ -45,10 +45,8 @@ render(){
                   <Route path="/chat" component={Chat} />
                   <Route path="/login" component={Login} />
               </Switch>
-       
             </div>
       )
-  
     }    
 }
 
@@ -57,7 +55,6 @@ ReactDOM.render((
     <BrowserRouter>
         <App />
     </BrowserRouter>
-
 
 ), document.getElementById('root'));
 

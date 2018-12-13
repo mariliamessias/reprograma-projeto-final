@@ -34,5 +34,79 @@
 .message 
 {   font-size: 15px; 
      word-wrap: break-word;
+}
+@media (min-width: 1281px) and (max-width: 1400px) {
+    .Samanta{
+        margin-left: 520px;
+    }
+}
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+.senderUsername {
+        font-weight: bold;
+        font-size: 20px;
+        word-wrap: break-word;   
+}
+.message 
+{   font-size: 16px; 
+     word-wrap: break-word;
+     text-align: left;
+
+}
+.Samanta{
+    margin-left: 350px;
+}
+
+.centralContainer{
+    width: 50%;
+    list-style-type: none;    
+    padding: 0px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.senderUsername {
+        font-weight: bold;
+        font-size: 25px;
+        word-wrap: break-word;   
+}
+.message 
+{   font-size: 20px; 
+     word-wrap: break-word;
+     text-align: left;
+
+}
+.Samanta{
+    margin-left: 370px;
+}
+
+.centralContainer{
+    width: 50%;
+    list-style-type: none;    
+    padding: 0px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .Samanta{
+        margin-left: 0px;
+    }
+
+    .centralContainer{
+        width: 100%;
+        list-style-type: none;    
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .Samanta{
+        margin-left: 0px;
+    }
+
+    .centralContainer{
+        width: 100%;
+        list-style-type: none;    
+        padding: 0px;
+    }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import DrawerTogglerButton from '../Menu/DrawerTogglerButton.js';
 import './Header.css'
 
@@ -13,7 +14,7 @@ const Header = props => (
           <li><a href="/">Introdução</a></li>
           <li><a href="/">Sobre Nós</a></li>
           <li><a href="/">Contato</a></li>
-          <li><a href="/">Minha Conta</a></li>
+          <li><a href="/login">Minha Conta</a></li>
           <li><a href="/">Meus Serviços</a></li>
           <li><a href="/">Sair</a></li>
         </ul>
