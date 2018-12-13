@@ -14,8 +14,8 @@ class Chat extends Component {
   }
 
   onUsernameSubmitted(username) {
-     fetch('http://localhost:3001/users', {
-    // fetch('https://querumconselhoapi.herokuapp.com/users', {
+    //  fetch('http://localhost:3001/users', {
+     fetch('https://querumconselhoapi.herokuapp.com/users', {
 
       method: 'POST',
       headers: {

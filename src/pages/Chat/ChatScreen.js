@@ -29,8 +29,8 @@ class ChatScreen extends Component {
       instanceLocator: 'v1:us1:20b55e86-abcf-463c-87f8-52d96d352c08',
       userId: this.props.currentUsername,
       tokenProvider: new Chatkit.TokenProvider({
-        // url: 'https://querumconselhoapi.herokuapp.com/authenticate',
-         url: 'http://localhost:3001/authenticate',
+        url: 'https://querumconselhoapi.herokuapp.com/authenticate',
+        //  url: 'http://localhost:3001/authenticate',
 
       }),
     })
